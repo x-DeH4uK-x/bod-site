@@ -16,4 +16,7 @@ export default defineConfig({
     pluginSass(),
     pluginTypedCSSModules()
   ],
+  output: {
+    assetPrefix: process.env.NODE_ENV === 'production' ? '/bod-site/' : '/',
+  },
 });
