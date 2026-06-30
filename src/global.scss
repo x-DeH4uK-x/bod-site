@@ -5,6 +5,7 @@ body {
   color: #fff;
   background-color: #141414;
   overflow: hidden;
+  touch-action: pan-x pan-y; 
 
   #root {
     height: 100%;

@@ -9,6 +9,9 @@ export default defineConfig({
   html: {
     title: 'Maps: Blade of Darkness',
   },
+  // server: {
+  //   host: '0.0.0.0',
+  // },
   plugins: [
     pluginReact({
       reactCompiler: true,

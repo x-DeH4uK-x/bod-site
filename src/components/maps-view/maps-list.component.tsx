@@ -26,7 +26,7 @@ export function MapsList({
       value={selectedMaps}
       onChange={onChange}
     >
-      <Space size="small" vertical>
+      <Space size="small" style={{ width: '100%' }} vertical>
         {maps.map((map) => (
           <MapsListOption
             key={map.key}
