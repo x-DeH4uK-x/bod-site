@@ -29,6 +29,8 @@
 }
 
 .collapse {
+  overflow: hidden;
+
   :global(.ant-collapse-header) {
     padding: var(--ant-padding-xs) var(--ant-padding-sm) !important;
     align-items: center !important;
@@ -41,7 +43,7 @@
   }
 
   :global(.ant-collapse-body) {
-    height: calc(100vh - 114px);
+    height: calc(100dvh - 114px);
     overflow-y: scroll;
     padding: var(--ant-padding-xs) var(--ant-padding-xs) var(--ant-padding-xs) var(--ant-padding-sm) !important;
   }
