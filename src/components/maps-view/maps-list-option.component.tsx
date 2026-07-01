@@ -20,7 +20,7 @@ export function MapsListOption({
 }: TProps) {
   return (
     <Flex align="center" justify="space-between" gap={8}>
-      <Checkbox value={value}>
+      <Checkbox value={value} style={{ width: '100%' }}>
         <Flex vertical>
           <Text>{name}</Text>
           <Text type="secondary">{description}</Text>

@@ -30,6 +30,7 @@
 
 .collapse {
   overflow: hidden;
+  border-radius: 0;
 
   :global(.ant-collapse-header) {
     padding: var(--ant-padding-xs) var(--ant-padding-sm) !important;
