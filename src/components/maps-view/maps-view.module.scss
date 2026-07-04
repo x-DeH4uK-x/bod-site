@@ -16,8 +16,12 @@
   background-color: var(--ant-color-bg-container);
 }
 
-.descriptions {
+.viewSwitcher {
   padding: var(--ant-padding-xs) var(--ant-padding-sm);
+}
+
+.descriptions {
+  padding: 0 var(--ant-padding-sm) var(--ant-padding-xs);
 
   :global(.ant-descriptions-header) {
     margin-bottom: var(--ant-padding-xs);
@@ -44,8 +48,20 @@
   }
 
   :global(.ant-collapse-body) {
-    height: calc(100dvh - 114px);
+    height: calc(100dvh - 154px);
     overflow-y: scroll;
     padding: var(--ant-padding-xs) var(--ant-padding-xs) var(--ant-padding-xs) var(--ant-padding-sm) !important;
+  }
+}
+
+@media (pointer: coarse) {
+  .descriptions {
+    display: none;
+  }
+
+  .collapse {
+    :global(.ant-collapse-body) {
+      height: calc(100dvh - 274px);
+    }
   }
 }

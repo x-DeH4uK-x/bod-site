@@ -6,6 +6,7 @@ interface CssExports {
   descriptions: string;
   list: string;
   sidebar: string;
+  viewSwitcher: string;
 }
 declare const cssExports: CssExports;
 export default cssExports;

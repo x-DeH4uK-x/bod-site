@@ -14,3 +14,54 @@
     }
   }
 }
+
+.rendererContainer3D {
+  canvas {
+    cursor: move;
+
+    &:active {
+      cursor: move;
+    }
+  }
+}
+
+.joystickContainer {
+  position: absolute;
+  bottom: 30px;
+  width: 120px;
+  height: 120px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  border-radius: 50px;
+  touch-action: none;
+  display: none;
+}
+
+.leftJoystick {
+  left: 30px;
+}
+
+.rightJoystick {
+  right: 30px;
+}
+
+.joystickHandle {
+  position: absolute;
+  top: 35px;
+  left: 35px;
+  width: 50px;
+  height: 50px;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 50%;
+}
+
+/* Показываем джойстики только на устройствах с тач-скрином */
+@media (pointer: coarse) {
+  .joystickContainer {
+    display: block;
+  }
+
+  .rendererContainer canvas {
+    pointer-events: none;
+  }
+}

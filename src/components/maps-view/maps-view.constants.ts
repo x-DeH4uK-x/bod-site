@@ -121,3 +121,13 @@ export const INITIAL_MAPS_COLORS: Record<MapKey, `#${string}`> = {
   [MapKey.Tower_M16]: '#FF7875',
   [MapKey.Chaos_M17]: '#9254DE',
 };
+
+export const FRUSTUM_RADIUS = 200;
+export const ZOOM_SPEED = 0.05;
+export const MIN_ZOOM = 0.5;
+export const MAX_ZOOM = 10.0;
+export const CAMERA_FAR = 1000;
+export const CAMERA_NEAR = 0.1;
+export const CAMERA_INIT_POSITION_Y = 500;
+
+export const JOYSTICK_RADIUS = 40;
